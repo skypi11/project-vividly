@@ -13,6 +13,7 @@
     --yellow: #ffae00;
     --black: #000;
     --white: #fff;
+    --font: "shrikhand", sans-serif;
 }
 a {
     transition: all 0.2s ease;
@@ -49,10 +50,10 @@ nav {
     top: 17px;
 }
 /* main */
-h2 {
+.choose h2 {
     margin-bottom: 15px;
 }
-main> section {
+.choose {
     background-color: var(--yellow);
     display: flex;
     flex-direction: column;
@@ -60,7 +61,7 @@ main> section {
     gap: 10px;
     align-items: center;
 }
-main> section> form{
+.choose form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,11 +80,12 @@ form input{
     background-color: var(--yellow);
     border-style: none;
     box-shadow: 0px 4px 15px 0px #00000026;
-    padding: 9px 5px;
+    padding: 9px;
     width: 100%;
 }
 input::placeholder {
     color: var(--black);
+    font-size: 1.1em;
 }
 button{
     border-style: none;
@@ -93,5 +95,73 @@ button{
     box-shadow: 0px 4px 4px 0px #00000040;
     font-weight: 500;
     font-size: 0.8em;
-
+}
+.works{
+    margin: 15px;
+}
+.works h3{
+    padding: 20px;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    border-radius: 8px;
+    background-size: 100%;
+    margin: 5px 0;
+    width: 100%;
+}
+.works div {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.works div p{
+    font-size:  16px;
+    font-weight: 500;
+    background-color: var(--orange);
+    padding: 3px 7px;
+    border-radius: 12px;
+    position: absolute;
+    top: 24px;
+    left: -10px;
+}
+.professional{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+.professional article{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius:20px ;
+    position: relative;
+}
+.professional article img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 140px;
+    object-fit: cover;
+}
+.new{
+    position: absolute;
+    background-color: var(--orange);
+    rotate: -45deg;
+    top: 19px;
+    left: -9px;
+    padding: 5px 20px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--white);
+}
+.worker{
+    border-bottom: 1px solid;
+    border-color: var(--yellow);
+    padding: 10px;
+}
+.recommand{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
 }
