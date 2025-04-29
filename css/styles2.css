@@ -41,7 +41,6 @@ header h1{
 }
 /* main */
 
-
 .professional img{
     width: 100%;
 }
@@ -188,4 +187,30 @@ ul{
 li{
     padding: 2px;
     margin: 2px;
+}
+/* responsive tablette */
+@media screen and (min-width: 768px){
+    .professional img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .contact, .professional{
+        max-width: 960px;
+        margin: auto;
+    }
+}
+/* responsive desktop */
+@media screen and (min-width: 1025px){
+    .foot{
+        display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    }
+    .foot ul{
+        display: flex;
+    }
+    .foot h2{
+        margin-bottom: 0;
+    }
 }
