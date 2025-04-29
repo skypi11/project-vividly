@@ -82,8 +82,8 @@ center {
     font-size: 0.81em;
     font-weight: 300;
 }
-p>span{
-    display: none;
+.choose p{
+    text-align: center;
 }
 .choose form input{
     border-radius: 20px;
@@ -131,6 +131,11 @@ input::placeholder {
     position: absolute;
     top: 24px;
     left: -10px;
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .professional{
     background-color: var(--yellow);
@@ -243,10 +248,50 @@ li{
     padding: 2px;
     margin: 2px;
 }
-/* media query */
+/* media query tablette */
 @media screen and (min-width: 768px){
     .professional article{
-        width: 48%;
+        width: calc(50% - 10px);
         margin: auto;
+    }
+    .pro{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        flex-direction: row;
+    }
+    .choose form{
+        max-width: 430px;
+    }
+}
+/* media query desktop */
+@media screen and (min-width: 1024px){
+    .pro{
+        max-width: 990px;
+        margin: auto;
+    }
+    .works{
+        max-width: 990px;
+    margin: auto;
+    }
+    .professional h2{
+        max-width: 990px;
+    margin: auto;
+    width: -webkit-fill-available;
+    }
+    .works h2{
+        margin: 15px 0;
+    }
+    .foot{
+        display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    }
+    .foot ul{
+        display: flex;
+    }
+    .foot h2{
+        margin-bottom: 0;
     }
 }
